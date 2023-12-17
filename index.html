@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username/Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+    <button type="button" id="signupBtn">Sign up</button>
+  </form>
+
+  <header>
+    <div class="container">
+      <div class="top-nav">
+        <h1 class="logo">My Notes</h1>
+        <div class="profile">
+          <img src="profile.jpg" alt="Profile Picture">
+          <span>John Doe</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="left-sidebar">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+    <div class="middle-section">
+      <div class="new-note">
+        <h3>Create New Note</h3>
+        <form id="note-form">
+          <div class="form-group">
+            <label for="note-title">Title</label>
+            <input type="text" id="note-title" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="note-content">Content</label>
+            <textarea id="note-content" class="form-input" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="button">Save Note</button>
+          </div>
+        </form>
+      </div>
+      <div class="note">
+        <h3>Note Title</h3>
+        <p>Note content goes here...</p>
+        <div class="note-options">
+          <button class="button delete-note">Delete</button>
+          <button class="button">Export as PNG</button>
+          <button class="button">Send to Email</button>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="friend-list-section">
+        <h3>Friends</h3>
+        <div class="friend">
+          <img src="friend1.jpg" alt="Friend 1">
+          <span>Friend 1</span>
+          <button class="invite-button">Invite</button>
+        </div>
+        <div class="friend">
+          <img src="friend2.jpg" alt="Friend 2">
+          <span>Friend 2</span>
+          <button class="invite-button">Invite</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      &copy; 2023 My Notes App. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
